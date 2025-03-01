@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation</title>
+</head>
+<body style="font-family: Arial, sans-serif; text-align: center; background-color: #f9f9f9; margin: 0; padding: 20px;">
+
+    <div class="container" style="max-width: 500px; background: white; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0,0,0,0.2); margin: auto;">
+        <h1 style="color: #d63384;">You're Invited!</h1>
+        
+        <div class="event-details" style="margin-bottom: 20px;">
+            <h2 style="color: #333;">Grand Wedding Celebration</h2>
+            <h2 style="color: #555;">Event Details</h2>
+            <p><strong>Date:</strong> March 15, 2025</p>
+            <p><strong>Time:</strong> 6:00 PM - 11:00 PM</p>
+            <p><strong>Location:</strong> Rosewood Banquet Hall, New York</p>
+        </div>
+
+        <h2 style="color: #77196f;">RSVP</h2>
+        
+        <form class="rsvp-form" action="submit_rsvp.php" method="POST" style="display: flex; flex-direction: column; align-items: center;">
+            <label for="Name" style="font-weight: bold;">Name:</label>
+            <input type="text" name="name" placeholder="Your Name" required style="padding: 8px; width: 80%; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 5px;">
+            
+            <label for="Email" style="font-weight: bold;">Email:</label>
+            <input type="email" name="email" placeholder="Your Email" required style="padding: 8px; width: 80%; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 5px;">
+
+            <label for="attendance" style="font-weight: bold;">Will you attend?</label>
+            <select name="attendance" required style="padding: 8px; width: 85%; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 5px;">
+                <option value="">Select an option</option>
+                <option value="yes">Yes, I'll be there!</option>
+                <option value="no">Sorry, I can't make it</option>
+            </select>
+
+            <button type="submit" style="background-color: #d63384; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; margin-top: 10px;">
+                Submit RSVP
+            </button>
+        </form>
+    </div>
+
+</body>
+</html>
